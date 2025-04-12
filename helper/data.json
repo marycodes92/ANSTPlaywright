@@ -1,0 +1,15 @@
+{
+    "data": {
+        "validCredentials": {
+            "username": "standard_user",
+            "password": "secret_sauce"
+        },
+        "blockedUser": {
+            "username": "locked_out_user",
+            "password": "secret_sauce"
+        }, 
+        "productDetails":{
+            "name": "Sauce Labs Fleece Jacket"
+        }
+    }
+}

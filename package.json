@@ -1,0 +1,20 @@
+{
+  "name": "anstplaywright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:web": "npx playwright test --config playwright.config.js --grep @UITEST",
+    "test": "npx playwright test --config playwright.config.js --grep @OTHERS",
+    "test:ui": "npx playwright test tests/sauce-demo-login.spec.js",
+    "test:component": "npx playwright test --grep @COMPONENT"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.10",
+    "allure-playwright": "^3.2.1"
+  }
+}
