@@ -19,4 +19,8 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright Tests
         run: npx playwright test 
-
+      - uses: actions/upload-artifacts@v4
+        if: ${{ !cancelled()}}
+        with:
+          name: Playwright-report
+          path: playwright-report
